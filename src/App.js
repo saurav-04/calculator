@@ -1,4 +1,5 @@
 import './App.css';
+import {UserInp} from './Components/userInp'
 
 
 
@@ -7,10 +8,8 @@ function App() {
     <div className="App">
       
       <span><h1>CALCULATOR</h1></span>
-
-      <span>
-      <input type='number' name='number' placeholder='0'/>
-      </span>
+      <UserInp/>
+      
 
       <span>
         <button>1</button>
