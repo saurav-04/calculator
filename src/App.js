@@ -1,6 +1,7 @@
 import './App.css';
-import {UserInp} from './Components/userInp'
+import { UserInp } from './Components/userInp'
 import { NumInp } from './Components/numInp';
+import { OperatorInp } from './Components/operatorInp';
 
 function App() {
   return (
@@ -9,12 +10,7 @@ function App() {
       <span><h1>CALCULATOR</h1></span>
       <UserInp/>
       <NumInp/>
-      <span>
-        <button>+</button>
-        <button>-</button>
-        <button>%</button>
-        <button>x</button>
-      </span>
+      <OperatorInp/>
 
     </div>
   );
