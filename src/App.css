@@ -1,31 +1,68 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-
 .calculator {
+  border: 1px solid #4c4c4c;
+  border-radius: 10px;
   max-width: 300px;
-  height: 100px;
-  background-color: #d7d7d7;
-  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  gap: 5px;
+}
+
+input[type="text"]{
+  text-align: end;
+  width: 100%;
+  height: 25%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+input[type="text"]:hover{
+  border: 1px solid #4c4c4c;
+  color: #4c4c4c;
+  transition: 0.1s ease-in-out;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.clear{
+  background-color: #ff6b0f;
+}
+
+.clear:hover{
+  background-color: #b94700;
+}
+
+button:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
+.result {
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  text-align: right;
 }
