@@ -1,8 +1,13 @@
+import { useContext } from "react";
+import { CalcContext } from "../Helpers/context";
+
  export const UserInp = () =>{
+    const {input} = useContext(CalcContext)
+
     return(
-        <div className=" user-inp">
+        <div className="user-inp">
             <span>
-               <input type='number' name='number' placeholder='0'/>
+               <input type='text' value={input} disabled/>
             </span>
         </div>
     );
