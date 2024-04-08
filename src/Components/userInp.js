@@ -5,5 +5,5 @@
                <input type='number' name='number' placeholder='0'/>
             </span>
         </div>
-    )
+    );
  }
