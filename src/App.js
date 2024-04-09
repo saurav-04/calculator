@@ -25,6 +25,7 @@ const Calculator = () => {
     }else if (value === 'X'){
       const newInput = input.slice(0,-1)
       setInput(newInput);
+      newInput.length === 0 ? setResult('') : setResult(evaluateExpression(newInput));
     }else {
       setInput(input + value);
     }
@@ -55,6 +56,8 @@ const Calculator = () => {
         <button onClick={() => handleClick('=')}>=</button>
         <button onClick={() => handleClick('+')}>+</button>
 
+      </div>
+      <div className='delete-btn'>
         <button onClick={() => handleClick('C')} className='clear'>C</button>
         <button onClick={() => handleClick('X')} className='clear'>X</button>
       </div>
