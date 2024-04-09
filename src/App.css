@@ -44,11 +44,23 @@ button {
   transition: background-color 0.3s, color 0.3s;
 }
 
+.delete{
+  grid-area: delete;
+  background-color: #ff6b0f;
+}
+
+.delete:hover{
+  grid-area: delete;
+  background-color: #b94700;
+}
+
 .clear{
+  grid-area: clear;
   background-color: #ff6b0f;
 }
 
 .clear:hover{
+  grid-area: clear;
   background-color: #b94700;
 }
 
