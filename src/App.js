@@ -7,16 +7,18 @@ const Calculator = () => {
 
   const evaluateExpression = () => {
     try {
-      const calculatedResult = Function('"use strict"; return (' + input + ')')();
+      const calculatedResult = new Function('"use strict"; return (' + input + ')')();
       setResult(calculatedResult.toString());
     } catch (error) {
       setResult('Error');
     }
   };
 
+  
+
   const handleClick = (value) => {
     if (value === '=') {
-      evaluateExpression();
+      evaluateExpression(input);
     } else if (value === 'C') {
       setInput('');
       setResult('');
