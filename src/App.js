@@ -23,7 +23,8 @@ const Calculator = () => {
       setInput('');
       setResult('');
     }else if (value === 'X'){
-      
+      const newInput = input.slice(0,-1)
+      setInput(newInput);
     }else {
       setInput(input + value);
     }
