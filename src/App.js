@@ -57,10 +57,10 @@ const Calculator = () => {
         <button onClick={() => handleClick('+')}>+</button>
 
       </div>
-      <div className='delete-btn'>
+      <span className='delete-btn'>
         <button onClick={() => handleClick('C')} className='clear'>C</button>
-        <button onClick={() => handleClick('X')} className='clear'>X</button>
-      </div>
+        <button onClick={() => handleClick('X')} className='delete'>X</button>
+      </span>
       <div className="result">{result}</div>
     </div>
   );
